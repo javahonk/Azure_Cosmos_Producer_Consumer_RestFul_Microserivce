@@ -1,6 +1,5 @@
 package com.solstice.azure.springcloud.inventory;
 
-import com.microsoft.azure.spring.data.cosmosdb.core.mapping.PartitionKey;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 

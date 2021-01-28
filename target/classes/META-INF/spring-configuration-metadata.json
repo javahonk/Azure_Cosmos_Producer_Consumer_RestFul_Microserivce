@@ -1,0 +1,18 @@
+{
+  "groups": [
+    {
+      "name": "feature-flag",
+      "type": "com.solstice.azure.springcloud.inventory.FeatureFlag",
+      "sourceType": "com.solstice.azure.springcloud.inventory.FeatureFlag"
+    }
+  ],
+  "properties": [
+    {
+      "name": "feature-flag.save-inventory",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.solstice.azure.springcloud.inventory.FeatureFlag",
+      "defaultValue": false
+    }
+  ],
+  "hints": []
+}

@@ -12,8 +12,8 @@ import java.util.List;
 @RestController
 public class InventoryController {
 
-    private InventoryRepository inventoryRepository;
-    private FeatureFlag featureFlag;
+    private final InventoryRepository inventoryRepository;
+    private final FeatureFlag featureFlag;
 
     public InventoryController(InventoryRepository repository, FeatureFlag featureFlag) {
         this.inventoryRepository = repository;

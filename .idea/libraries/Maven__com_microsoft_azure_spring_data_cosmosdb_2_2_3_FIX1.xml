@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.microsoft.azure:spring-data-cosmosdb:2.2.3.FIX1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/microsoft/azure/spring-data-cosmosdb/2.2.3.FIX1/spring-data-cosmosdb-2.2.3.FIX1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/microsoft/azure/spring-data-cosmosdb/2.2.3.FIX1/spring-data-cosmosdb-2.2.3.FIX1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/microsoft/azure/spring-data-cosmosdb/2.2.3.FIX1/spring-data-cosmosdb-2.2.3.FIX1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
