@@ -1,0 +1,7 @@
+feature-flag:
+  saveInventory: true
+logging:
+  config: classpath:log4j2.yml
+spring:
+  application:
+    name: inventory
