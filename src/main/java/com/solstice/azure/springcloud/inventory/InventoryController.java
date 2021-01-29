@@ -1,5 +1,6 @@
 package com.solstice.azure.springcloud.inventory;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,6 +15,9 @@ public class InventoryController {
 
     private final InventoryRepository inventoryRepository;
     private final FeatureFlag featureFlag;
+
+    @Autowired
+    private FetchDataByQuery fetchDataByQuery;
 
     public InventoryController(InventoryRepository repository, FeatureFlag featureFlag) {
         this.inventoryRepository = repository;
@@ -31,7 +35,9 @@ public class InventoryController {
     }
 
     @GetMapping("/inventory")
-    public ResponseEntity<List<Inventory>> getAllInventories() {
+    public ResponseEntity<List<Inventory>> getAllInventories() throws InterruptedException {
+
+        fetchDataByQuery.fetchRecordFromDb();
         List<Inventory> inventories = (List<Inventory>) inventoryRepository.findAll();
         return new ResponseEntity<>(inventories, HttpStatus.OK);
     }

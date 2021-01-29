@@ -63,6 +63,16 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- Cosmos Database started-->
+
+		<dependency>
+			<groupId>com.microsoft.azure</groupId>
+			<artifactId>azure-cosmosdb</artifactId>
+			<version>2.4.3</version>
+		</dependency>
+
+		<!-- Cosmos Database started-->
 	</dependencies>
 
 	<dependencyManagement>
