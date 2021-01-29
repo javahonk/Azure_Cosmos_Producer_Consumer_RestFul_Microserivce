@@ -29,3 +29,10 @@ build/
 
 ### VS Code ###
 .vscode/
+
+###Intellij Idea###
+.idea
+*.iws
+*.imp
+*.ipr
+
